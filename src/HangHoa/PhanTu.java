@@ -1,4 +1,4 @@
-package SanPham;
+package HangHoa;
 import java.util.Scanner;
 
 public abstract class PhanTu {

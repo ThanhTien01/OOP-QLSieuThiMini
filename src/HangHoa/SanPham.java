@@ -1,6 +1,8 @@
-package SanPham;
+package HangHoa;
 
-public class SanPham extends PhanTu{
+import DanhSach.DanhSachSanPham;
+
+public class SanPham extends PhanTu {
     private String maSanPham;
     private String tenSanPham;
     private String thuonghieu;
@@ -27,14 +29,14 @@ public class SanPham extends PhanTu{
 
     public void setMaSanPham() {
         System.out.print("Nhap ma san pham: ");
-        maSanPham = sc.nextLine();
-        // boolean check = false;
-        // do
-        // {
-        //     maSanPham = sc.nextLine();
-        //     // check = ttds.layPhanTuVoi(maSanPham) == null; // kiểm tra mã sản phẩm xem đã tồn tại trong danh sách chưa
-        //     if (!check) System.out.print("Ma san pham da ton tai, moi nhap lai: ");
-        // } while (!check);
+        DanhSachSanPham ttds = new DanhSachSanPham();
+        boolean check = false;
+        do
+        {
+            maSanPham = sc.nextLine();
+            check = ttds.layPhanTuVoi(maSanPham) == null; // kiểm tra mã sản phẩm xem đã tồn tại trong danh sách chưa
+            if (!check) System.out.print("Ma san pham da ton tai, moi nhap lai: ");
+        } while (!check);
     }
     public void setMaSanPham(String maSanPham) {
         this.maSanPham = maSanPham;
@@ -131,7 +133,7 @@ public class SanPham extends PhanTu{
 
     @Override
     public void xuat() {
-        System.out.printf("%-20s %-20s %-20s %-20s %-20s %-20s \n",maSanPham,tenSanPham,thuonghieu,noiSanXuat,soLuong,gia);
+        System.out.printf("%-20s %-50s %-20s %-20s %-20s %-20s \n",maSanPham,tenSanPham,thuonghieu,noiSanXuat,soLuong,gia);
     }    
 
     @Override
@@ -181,15 +183,5 @@ public class SanPham extends PhanTu{
                     break;
             }
         } while(chon!=0);
-    }
-    public static void main(String[] args) {
-        SanPham sp = new SanPham();
-        sp.nhap();
-        System.out.println("\n=== Thong tin vua nhap ===");
-        sp.xuat();
-
-        sp.suaThongTin();
-        System.out.println("\n=== Thong tin sau khi sua ===");
-        sp.xuat();
     }
 }
