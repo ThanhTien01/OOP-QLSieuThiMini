@@ -14,14 +14,14 @@ public class XuLy {
         int chon;
         System.out.println("***** Chuong Trinh Quan Ly Sieu Thi Mini *****");
         do {
-            System.out.println("==============================");
+            System.out.println("===========================================");
             System.out.println("1. Tao hoa don moi");
             System.out.println("2. Them khach hang moi");
             System.out.println("3. Them nhan vien moi");
             System.out.println("4. In danh sach danh muc cung san pham");
             System.out.println("5. Di toi menu quan ly");
             System.out.println("0. Thoat chuong trinh");
-            System.out.println("==============================");
+            System.out.println("===========================================");
             System.out.print("Moi chon: ");
             
             chon = Integer.parseInt(sc.nextLine());
@@ -96,7 +96,7 @@ public class XuLy {
         System.out.println("5. Xoa "+ten);
         System.out.println("6. Tim "+ten);
         System.out.println("7. Thong ke");
-        System.out.println("8. Tong so luong "+ten);
+        // System.out.println("8. Tong so luong "+ten);
         System.out.println("0. Quay lai menu quan ly");
         System.out.println("==============================");
         System.out.print("Moi chon: ");

@@ -103,16 +103,16 @@ public class FileHandler {
                         case 0:
                             tenFile = "dssp.txt";
                             ghiFile("20", tenFile);
-                            // bút bi - 4
-                            themSP("BB01", "But bi", "A", "Viet Nam", 1427, 2800);
-                            themSP("BB02", "But bi", "B", "Viet Nam", 623, 2500);
-                            themSP("BB03", "But bi", "C", "Viet Nam", 152, 2300);
-                            themSP("BB04", "But bi", "D", "Viet Nam", 254, 2000);
-                            // bút chì
-                            themSP("BC01", "But chi", "D", "Viet Nam", 872, 3600);
-                            themSP("BC02", "But chi", "A", "Viet Nam", 314, 2100);
-                            themSP("BC03", "But chi", "C", "Viet Nam", 541, 3200);
-                            themSP("BC04", "But chi", "E", "Viet Nam", 170, 1900);
+                            // nước ngọt - 4
+                            themSP("NN01", "Nuoc ngot co ga Pepsi", "Pepsi", "Viet Nam", 1427, 10000);
+                            themSP("NN02", "Nuoc ngot co ga Coca-Cola", "Coca-Cola", "Viet Nam", 623, 12000);
+                            themSP("NN03", "Nuoc tang luc Red-bull", "Red-bull", "Viet Nam", 152, 18000);
+                            themSP("NN04", "Nuoc tang luc Number1", "Number1", "Viet Nam", 254, 15000);
+                            // bánh kẹo
+                            themSP("BK01", "Banh bong lan cuon kem", "Solite", "Viet Nam", 872, 5500);
+                            themSP("BK02", "Banh chocopie", "Orion", "Viet Nam", 314, 8000);
+                            themSP("BK03", "Keo chupa chups", "Chupa Chups", "Viet Nam", 541, 3200);
+                            themSP("BK04", "Keo deo", "Haribo", "Viet Nam", 170, 1900);
                             // tập
                             themSP("TAP01", "Tap tot loai A", "A", "Viet Nam", 142, 5800);
                             themSP("TAP02", "Tap tot loai B", "B", "Viet Nam", 314, 6200);
@@ -123,11 +123,11 @@ public class FileHandler {
                             themSP("SACH02", "Sach giao khoa Toan hoc lop 10 tap 2", "NXBGDVN", "Viet Nam", 141, 5100);
                             themSP("SACH03", "Sach giao khoa Tin hoc lop 10 tap 1", "NXBGDVN", "Viet Nam", 316, 3200);
                             themSP("SACH04", "Sach giao khoa Tin hoc lop 10 tap 2", "NXBGDVN", "Viet Nam", 314, 4800);
-                            // Giấy in
-                            themSP("GI01", "Giay in A4 loai tot", "F", "Viet Nam", 142, 85000);
-                            themSP("GI02", "Giay in A4 loai thuong", "G", "Viet Nam", 141, 60000);
-                            themSP("GI03", "Giay in A3 loai tot", "A", "Viet Nam", 316, 96000);
-                            themSP("GI04", "Giay in A3 loai thuong", "E", "Viet Nam", 314, 80000);
+                            // Hóa mỹ phẩm
+                            themSP("HMP01", "Dau goi duoc lieu", "Nguyen Xuan", "Viet Nam", 142, 85000);
+                            themSP("HMP02", "Dau goi sach gau", "Clear", "Viet Nam", 141, 60000);
+                            themSP("HMP03", "Sua rua mat", "Cetafill", "Viet Nam", 316, 96000);
+                            themSP("HMP04", "Sua tam huong nuoc hoa", "Bath & Body Works", "Viet Nam", 314, 80000);
                             break;
                         case 1:
                             tenFile = "dsnv.txt";
@@ -154,11 +154,11 @@ public class FileHandler {
                             tenFile = "dsdmsp.txt";
                             ghiFile("5", tenFile);
                             // 1
-                            String[] dsMaSp = new String[]{"BB01","BB02","BB03","BB04"};
-                            themDmSP("BUTBI", "But bi", 4, dsMaSp);
+                            String[] dsMaSp = new String[]{"NN01","NN02","NN03","NN04"};
+                            themDmSP("NUOCNGOT", "Nuoc ngot", 4, dsMaSp);
                             // 2
-                            dsMaSp = new String[]{"BC01","BC02","BC03","BC04"};
-                            themDmSP("BUTCHI", "But chi", 4, dsMaSp);
+                            dsMaSp = new String[]{"BK01","BK02","BK03","BK04"};
+                            themDmSP("BANHKEO", "Banh keo", 4, dsMaSp);
                             // 3
                             dsMaSp = new String[]{"TAP01","TAP02","TAP03","TAP04"};
                             themDmSP("TAP", "Tap", 4, dsMaSp);
@@ -166,8 +166,8 @@ public class FileHandler {
                             dsMaSp = new String[]{"SACH01","SACH02","SACH03","SACH04"};
                             themDmSP("SGK", "Sach giao khoa", 4, dsMaSp);
                             // 5
-                            dsMaSp = new String[]{"GI01","GI02","GI03","GI04"};
-                            themDmSP("GIAYIN", "Giay in", 4, dsMaSp);
+                            dsMaSp = new String[]{"HMP01","HMP02","HMP03","HMP04"};
+                            themDmSP("HOAMYPHAM", "Hoa my pham", 4, dsMaSp);
                             break;
                         default:
                             break;
